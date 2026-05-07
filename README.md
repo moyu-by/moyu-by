@@ -64,11 +64,10 @@
 
 ---
 
-## 📝 About Me
-- 🔭 I’m currently working on **backend services and AI integration projects**
-- 🌱 I’m learning **LangChain, AI & cloud-native architecture**
-- 💬 Ask me about **Spring, FastAPI, React, Vue, Docker**
-- ⚡ Fun fact: I ❤️ building high-performance microservices & exploring AI in production
+## 📊 Language Stats
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moyu-by&hide=html,css&langs_count=8&layout=compact&theme=radical"/>
+</p>
 
 ---
 
