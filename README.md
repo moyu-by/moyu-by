@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Moyu</h1>
 <h3 align="center">A passionate backend & full-stack developer 🚀</h3>
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Weight+right,+act,+no+regret;&fontSize=24&color=8492A0" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=Weight+right,+act,+no+regret!;&fontSize=24&color=8492A0" alt="Typing SVG" />
 </div>
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=moyu-by&color=blue" alt="Profile views"/>
@@ -16,10 +16,7 @@
   <a href="https://github.com/moyu-by" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="https://www.linkedin.com/in/moyu" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:moyu@example.com" target="_blank">
+  <a href="mailto:yh0310an@outlook.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
