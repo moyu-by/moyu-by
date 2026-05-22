@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Moyu</h1>
 <h3 align="center">A passionate backend & full-stack developer 🚀</h3>
-
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Weight+right,+act,+no+regret;&fontSize=24&color=8492A0" alt="Typing SVG" />
+</div>
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=moyu-by&color=blue" alt="Profile views"/>
   <img src="https://img.shields.io/badge/STATUS-Active-brightgreen" alt="Status"/>
@@ -55,19 +57,7 @@
 
 ---
 
-## 🔥 GitHub Stats
 
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=moyu-by&show_icons=true&theme=radical"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moyu-by&layout=compact&theme=radical"/>
-</p>
-
----
-
-## 📊 Language Stats
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moyu-by&hide=html,css&langs_count=8&layout=compact&theme=radical"/>
-</p>
 
 ---
 
