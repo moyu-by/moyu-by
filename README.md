@@ -51,13 +51,3 @@
   <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white"/>
   <img src="https://img.shields.io/badge/MariaDB-003545?logo=mariadb&logoColor=white"/>
 </p>
-
----
-
-
-
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="300"/>
-</p>
