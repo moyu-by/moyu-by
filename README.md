@@ -2,7 +2,7 @@
 
   <!-- 墨韵开场：三行轮播 -->
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=2600&pause=1000&color=6DB33F&center=true&vCenter=true&width=860&lines=墨落成渊+%7C+Code+with+Flow;Building+systems+that+think+and+scale.;Engineer+by+craft%2C+poet+by+temperament."
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=2600&pause=1000&color=6DB33F&center=true&vCenter=true&width=860&lines=%E5%A2%A8%E8%90%BD%E6%88%90%E6%B8%8A+%7C+Code+with+Flow;Building+systems+that+think+and+scale.;Engineer+by+craft%2C+poet+by+temperament."
     alt="Typing SVG"
   />
 
@@ -117,7 +117,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=moyu-by&theme=tokyonight&hide_border=true&background=0D1117&stroke=6DB33F&ring=61DAFB&fire=FF6F00&currStreakLabel=6DB33F" alt="Streak"/>
+  <img src="https://streak-stats.demolab.com/?user=moyu-by&theme=tokyonight&hide_border=true&background=0D1117&stroke=6DB33F&ring=61DAFB&fire=FF6F00&currStreakLabel=6DB33F" alt="Streak"/>
 </div>
 
 ---
@@ -151,8 +151,12 @@ philosophy: |
 
 <div align="center">
 
-  <!-- Snakemake 彩蛋：需 Platane/snk Action -->
-  <img src="https://raw.githubusercontent.com/moyu-by/moyu-by/output/github-contribution-grid-snake.svg" alt="Snake"/>
+  <!-- Snake 彩蛋：由 Platane/snk Action 自动生成到 output 分支 -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/moyu-by/moyu-by/output/github-contribution-grid-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/moyu-by/moyu-by/output/github-contribution-grid-snake.svg"/>
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/moyu-by/moyu-by/output/github-contribution-grid-snake.svg"/>
+  </picture>
 
   <br/><br/>
 
@@ -161,7 +165,17 @@ philosophy: |
 
   <br/>
 
-  <!-- 渐变收尾 -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,6DB33F,61DAFB,7C3AED&height=140&section=footer&text=See+you+on+the+next+commit+%E2%9C%A8&fontSize=28&fontColor=FFFFFF&fontAlignY=70" width="100%"/>
+  <!-- 渐变收尾条：内联 SVG，零外部依赖 -->
+  <svg viewBox="0 0 1000 64" xmlns="http://www.w3.org/2000/svg" width="100%">
+    <defs>
+      <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6DB33F"/>
+        <stop offset="50%" stop-color="#61DAFB"/>
+        <stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+    </defs>
+    <rect width="1000" height="64" rx="14" fill="url(#footer-grad)"/>
+    <text x="500" y="40" text-anchor="middle" font-family="'Fira Code', monospace" font-size="24" fill="#FFFFFF" font-weight="600">See you on the next commit</text>
+  </svg>
 
 </div>
