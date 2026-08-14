@@ -2,7 +2,7 @@
 
   <!-- 墨韵开场：三行轮播 -->
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=2600&pause=1000&color=6DB33F&center=true&vCenter=true&width=860&lines=%E5%A2%A8%E8%90%BD%E6%88%90%E6%B8%8A+%7C+Code+with+Flow;Building+systems+that+think+and+scale.;Engineer+by+craft%2C+poet+by+temperament."
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=2600&pause=1000&color=6DB33F&center=true&vCenter=true&width=860&lines=Hi+there%2C+I%27m+Moyu+%F0%9F%91%8B;Weight+right%2C+act%2C+no+regret!;Building+systems+that+think+and+scale."
     alt="Typing SVG"
   />
 
