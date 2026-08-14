@@ -52,7 +52,12 @@ def esc(s):
 repos = []
 page = 1
 while True:
-    batch = api("/users/{0}/repos?per_page=100&page={1}&sort=updated".format(USER, page))
+    try:
+        batch = api(
+            "/users/{0}/repos?per_page=100&page={1}&affiliation=owner,collaborator,organization_member&sort=updated".format(USER, page)
+        )
+    except Exception:
+        break
     if not batch or page > 10:
         break
     repos.extend(batch)
