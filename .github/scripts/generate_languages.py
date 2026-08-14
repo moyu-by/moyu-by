@@ -95,16 +95,16 @@ for repo in repos:
 
 total = sum(lang_bytes.values())
 items = sorted(
-    ((name, size) for name, size in lang_bytes.items() if size / total >= 0.005),
+    ((name, size) for name, size in lang_bytes.items() if size / total >= 0.002),
     key=lambda kv: -kv[1],
 )
 
-WIDTH, HEIGHT = 400, 200
+WIDTH, HEIGHT = 400, 270
 BG, BORDER = "#0D1117", "#30363D"
 TITLE, TEXT, SUBTEXT = "#6DB33F", "#8B949E", "#484F58"
 BAR_BG = "#21262D"
 
-rows = items[:7]
+rows = items[:10]
 body = []
 
 body.append(
