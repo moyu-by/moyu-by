@@ -112,8 +112,13 @@
 ## 📊 Signal & Noise
 
 <div align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=moyu-by&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6DB33F&icon_color=61DAFB&text_color=C9D1D9"/>
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moyu-by&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6DB33F&text_color=C9D1D9"/>
+  <img src="https://img.shields.io/github/followers/moyu-by?style=for-the-badge&logo=github&label=Followers&color=6DB33F"/>
+  <img src="https://img.shields.io/github/stars/moyu-by?style=for-the-badge&logo=github&label=Stars&color=6DB33F"/>
+  <img src="https://img.shields.io/github/created-at/moyu-by/moyu-by?style=for-the-badge&label=On+GitHub+Since&color=6DB33F"/>
+</div>
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/6DB33F/moyu-by" alt="GitHub Contribution Chart"/>
 </div>
 
 <div align="center">
