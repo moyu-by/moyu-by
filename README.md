@@ -122,6 +122,7 @@
 </div>
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/moyu-by/moyu-by/output/languages.svg" alt="Languages"/>
   <img src="https://streak-stats.demolab.com/?user=moyu-by&theme=tokyonight&hide_border=true&background=0D1117&stroke=6DB33F&ring=61DAFB&fire=FF6F00&currStreakLabel=6DB33F" alt="Streak"/>
 </div>
 

@@ -3,6 +3,9 @@ name: Generate Snake
 on:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches-ignore:
+      - output
   workflow_dispatch:
 
 permissions:
