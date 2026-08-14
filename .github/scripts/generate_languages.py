@@ -67,16 +67,31 @@ while True:
     page += 1
 
 lang_bytes = Counter()
+weight_notes = []
 for repo in repos:
     if repo.get("fork"):
         continue
     owner = repo["owner"]["login"]
+    name = repo["name"]
+    weight = 1.0
+    if owner != USER:
+        try:
+            contribs = api("/repos/{0}/{1}/contributors".format(owner, name))
+            total = sum(c.get("contributions", 0) for c in contribs)
+            mine = sum(
+                c.get("contributions", 0) for c in contribs if c.get("login") == USER
+            )
+            if total > 0:
+                weight = mine / total
+                weight_notes.append("{0}: {1}/{2}".format(name, mine, total))
+        except Exception:
+            pass
     try:
-        langs = api("/repos/{0}/{1}/languages".format(owner, repo["name"]))
+        langs = api("/repos/{0}/{1}/languages".format(owner, name))
     except Exception:
         continue
-    for name, size in langs.items():
-        lang_bytes[name] += size
+    for lang, size in langs.items():
+        lang_bytes[lang] += int(size * weight)
 
 total = sum(lang_bytes.values())
 items = sorted(
@@ -121,7 +136,7 @@ for i, (name, size) in enumerate(rows):
 footer_y = 52 + len(rows) * 20 + 10
 body.append(
     '<text x="20" y="{0}" font-family="Segoe UI, sans-serif" font-size="10" '
-    'fill="{1}">Auto-generated via GitHub Actions</text>'.format(footer_y, SUBTEXT)
+    'fill="{1}">By personal contribution (shared repos weighted by commits)</text>'.format(footer_y, SUBTEXT)
 )
 
 svg = (
@@ -138,3 +153,5 @@ os.makedirs("dist", exist_ok=True)
 with open("dist/languages.svg", "w", encoding="utf-8") as f:
     f.write(svg)
 print("generated dist/languages.svg with {0} languages".format(len(rows)))
+if weight_notes:
+    print("shared repo weights: " + ", ".join(weight_notes))
