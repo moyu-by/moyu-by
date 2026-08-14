@@ -23,6 +23,7 @@ jobs:
 
       - name: Generate languages SVG
         env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
         run: python3 .github/scripts/generate_languages.py

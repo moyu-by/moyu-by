@@ -4,7 +4,7 @@ import os
 import urllib.request
 from collections import Counter
 
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN", "")
 USER = os.environ.get("GITHUB_REPOSITORY_OWNER", "moyu-by")
 
 LANG_COLORS = {
@@ -54,10 +54,13 @@ page = 1
 while True:
     try:
         batch = api(
-            "/users/{0}/repos?per_page=100&page={1}&affiliation=owner,collaborator,organization_member&sort=updated".format(USER, page)
+            "/user/repos?per_page=100&page={0}&affiliation=owner,collaborator,organization_member&sort=updated".format(page)
         )
     except Exception:
-        break
+        try:
+            batch = api("/users/{0}/repos?per_page=100&page={1}".format(USER, page))
+        except Exception:
+            break
     if not batch or page > 10:
         break
     repos.extend(batch)
@@ -67,8 +70,9 @@ lang_bytes = Counter()
 for repo in repos:
     if repo.get("fork"):
         continue
+    owner = repo["owner"]["login"]
     try:
-        langs = api("/repos/{0}/{1}/languages".format(USER, repo["name"]))
+        langs = api("/repos/{0}/{1}/languages".format(owner, repo["name"]))
     except Exception:
         continue
     for name, size in langs.items():
