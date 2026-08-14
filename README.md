@@ -135,21 +135,11 @@
 
 ## About
 
-```yaml
-craft:
-  - "Spring Boot 后端服务：REST API、JWT 鉴权、Redis 缓存、MyBatis-Plus 持久化"
-  - "AI 应用工程化：RAG 检索、LangChain 编排、向量数据库（ChromaDB）"
-  - "全栈界面：Vue 3 / React + TypeScript，以及 Kotlin Android"
-
-currently_learning:
-  - "Agentic Workflow & Multi-agent Collaboration"
-  - "Jetpack Compose 移动端开发"
-  - "向量检索与知识库工程"
-
-philosophy: |
-  Writing software is no different from writing prose —
-  every line should earn its place on the page.
-```
+- **后端** — Java · Spring Boot · MyBatis-Plus · Redis
+- **AI 应用** — Python · FastAPI · LangChain · RAG
+- **前端** — Vue 3 / React · TypeScript
+- **移动端** — Kotlin · Jetpack Compose
+- **正在探索** — Agentic Workflow、向量检索与知识库工程
 
 <br/>
 
